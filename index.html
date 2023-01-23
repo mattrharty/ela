@@ -8,19 +8,44 @@ padding-top: 20px;
 padding-bottom: 20px;
 font-family: 'Courier New', monospace;
 }
-  .button-grow {
+  .button-grow-left {
   background-color: #e8e9eb;
   border: 12px solid #4d4d4d;
   border-radius: 0px;
-  padding: 64px 400px;
+  padding: 48px 200px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: 'Courier New', monospace;
   font-color:black;
   font-size: 64px;
+  position: absolute;
+  top:50%;
+  right: 0;
+  width: 120px;
+  transform: translateY(50%);
+}
+  
+.button-grow-right {
+  background-color: #e8e9eb;
+  border: 12px solid #4d4d4d;
+  border-radius: 0px;
+  padding: 48px 200px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Courier New', monospace;
+  font-color:black;
+  font-size: 64px;
+  position: absolute;
+  top:50%;
+  right: 0;
+  width: 120px;
+  transform: translateY(-50%);
 }
 
-.button-grow:hover {
+.button-grow-left:hover {
+  transform: scale(1.1);
+}
+.button-grow-right:hover {
   transform: scale(1.1);
 }
 .title{
@@ -30,9 +55,9 @@ font-size:50px;
 }
 </style>
   <center><strong><h1 class="title">Matt's Writing Portfolio</h1></strong></center>
-  <center><a style="text-align:left;" href="https://english.mattharty.com/narrative.html"><button class="button-grow">Personal Narrative</button></a></center>
-  <center><a style="text-align:right;" href="https://english.mattharty.com/poetry.html"><button class="button-grow">Poetry Journal</button></a></center>
-  <center><a style="text-align:left;" href="https://english.mattharty.com/omam.html"><button class="button-grow">Literary and Non-Literary Text Analysis</button></a></center>
-  <center><a style="text-align:right;" href="https://english.mattharty.com/randj.html"><button class="button-grow">Romeo and Juliet I/O</button></a></center>
+  <a href="https://english.mattharty.com/narrative.html"><button class="button-grow-left">Personal Narrative</button></a>
+  <a href="https://english.mattharty.com/poetry.html"><button class="button-grow-right">Poetry Journal</button></a>
+  <a href="https://english.mattharty.com/omam.html"><button class="button-grow-left">Literary and Non-Literary Text Analysis</button></a>
+  <a href="https://english.mattharty.com/randj.html"><button class="button-grow-right">Romeo and Juliet I/O</button></a>
 </center>
 </html>
